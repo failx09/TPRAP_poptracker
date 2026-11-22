@@ -559,7 +559,7 @@ ER_EDGES = {
 			end
 		},
 		{
-			
+
 			function()
 				return hasAll({
 					"boots",
@@ -1000,7 +1000,7 @@ ER_EDGES = {
 	SnowpeakRuinsCagedFreezardRoom__TO__SnowpeakRuinsChapel = {
 		{
 			function ()
-				return false
+				return AccessibilityLevel.None
 			end
 		},
 		{}
@@ -1026,7 +1026,7 @@ ER_EDGES = {
 	SnowpeakRuinsCagedFreezardRoomLower__TO__SnowpeakRuinsEntrance = {
 		{
 			function ()
-				return false
+				return AccessibilityLevel.None
 			end
 		},
 		{
@@ -1120,7 +1120,7 @@ ER_EDGES = {
 	SnowpeakRuinsEntrance__TO__SnowpeakRuinsCagedFreezardRoomLower = {
 		{
 			function ()
-				return false
+				return AccessibilityLevel.None
 			end
 		},
 		{
@@ -1152,7 +1152,7 @@ ER_EDGES = {
 	SnowpeakRuinsNortheastChilfosRoomFirstFloor__TO__SnowpeakRuinsNortheastChilfosRoomSecondFloor = {
 		{
 			function ()
-				return false
+				return AccessibilityLevel.None
 			end
 		},
 		{
@@ -1831,7 +1831,7 @@ ER_EDGES = {
 	EldinField__TO__EldinFieldFromLavaCaveLower = {
 		{
 			function ()
-				return false
+				return AccessibilityLevel.None
 			end
 		},
 		{

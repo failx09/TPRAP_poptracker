@@ -2,8 +2,8 @@
 -- Check if player has at least 1 of following item
 function has(item)
 	if type(item) == "boolean" then return item end
-	if item == "lantern" or item == "lamp" then
-		return hasAll({"lantern", canRefillOil()})
+    if item == "lantern" or item == "lamp" then
+        return Tracker:ProviderCountForCode("lantern") >= 1 and canRefillOil() > AccessibilityLevel.None
 	elseif item == "p_bow" or item == "bow" or item == "smallquiver" or item == "mediumquiver" or item == "largequiver" then
 		if not canGetArrows() then return false end
 	end
@@ -28,7 +28,7 @@ function hasAny(items)
 			level = math.max(level, item)
 		end
 	end
-	if  level == AccessibilityLevel.SequenceBreak and Tracker:FindObjectForCode("glitcheson") then
+	if level == AccessibilityLevel.SequenceBreak and Tracker:FindObjectForCode("glitcheson") then
 		level = AccessibilityLevel.Normal
 	end
 	return level
@@ -110,9 +110,9 @@ function canAccess(targetnode, exclude)
 				local accessrules = ER_EDGES[edge]
 				if edge == exclude then
 					--skip
-				elseif not accessrules[1] or not accessrules[1][1] or accessrules[1][1]() then
+				elseif not accessrules[1] or not accessrules[1][1] or (accessrules[1][1]() > AccessibilityLevel.None) then
 					table.insert(queue, from)
-				elseif accessrules[2] and (not accessrules[2][1] or accessrules[2][1]()) then
+				elseif accessrules[2] and (not accessrules[2][1] or (accessrules[2][1]() > AccessibilityLevel.None)) then
 					table.insert(queueseq, from)
 				end
 			end
@@ -131,8 +131,8 @@ function canAccess(targetnode, exclude)
 				local accessrules = ER_EDGES[edge]
 				if edge == exclude then
 					--skip
-				elseif not accessrules[1] or not accessrules[1][1] or accessrules[1][1]()
-				or (accessrules[2] and (not accessrules[2][1] or accessrules[2][1]())) then
+				elseif not accessrules[1] or not accessrules[1][1] or (accessrules[1][1]() > AccessibilityLevel.None)
+				or (accessrules[2] and (not accessrules[2][1] or (accessrules[2][1]() > AccessibilityLevel.None))) then
 					table.insert(queueseq, from)
 				end
 			end
@@ -827,7 +827,7 @@ function canClearForest()
 	return hasAll({
 		hasAny({
 			"ftcompleted",
-			"faronwoodsopenon"
+			"faronwoodsopen"
 		}),
 		canCompletePrologue(),
 		faronTwilightCleared()
@@ -1321,7 +1321,7 @@ function canClearForestGlitched()
 		AccessibilityLevel.SequenceBreak,
 		canCompletePrologue(),
 		hasAny({
-			"faronwoodsopenon",
+			"faronwoodsopen",
 			"ftcompleted",
 			canDoLJA(),
 			canDoMapGlitch()

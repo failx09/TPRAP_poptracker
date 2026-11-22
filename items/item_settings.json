@@ -92,13 +92,13 @@
 		"stages": [
 			{
 				"name": "Shop Items Enabled",
-				"codes": "shopitems, shopitemson",
+				"codes": "shuffleshops, shuffleshopson",
 				"img": "images/Settings/ShopItemsEnabled.png",
 				"inherit_codes": false
 			},
 			{
 				"name": "Shop Items Disabled",
-				"codes": "shopitems, shopitemsoff",
+				"codes": "shuffleshops, shuffleshopsoff",
 				"img": "images/Settings/ShopItemsDisabled.png",
 				"inherit_codes": false
 			}

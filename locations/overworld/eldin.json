@@ -1671,7 +1671,7 @@
 									{
 										"access_rules":[
 											"^$canAccess|HiddenVillage, bow, dominionrod",
-											"[glitcheson], ^$canAccess|HiddenVillage, ^$CanDoHiddenVillageGlitched, dominionrod"
+											"[glitcheson], ^$canAccess|HiddenVillage, ^$canDoHiddenVillageGlitched, dominionrod"
 										]
 									}
 								]
