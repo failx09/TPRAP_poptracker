@@ -80,7 +80,7 @@ end
 
 
 CANACCESS_ACTIVE = {count = 0}
-function canAccess(targetnode, exclude)
+function _canAccess(targetnode, exclude)
 	if CANACCESS_ACTIVE[targetnode] then
 		return AccessibilityLevel.None
 	end

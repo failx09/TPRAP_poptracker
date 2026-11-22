@@ -7,6 +7,7 @@ ScriptHost:LoadScript("scripts/location_mapping.lua")
 ScriptHost:LoadScript("scripts/region_mapping.lua")
 ScriptHost:LoadScript("scripts/server_copy_keys.lua")
 ScriptHost:LoadScript("scripts/control.lua")
+ScriptHost:LoadScript("scripts/graph.lua")
 ScriptHost:LoadScript("scripts/autotracking.lua")
 ScriptHost:LoadScript("scripts/code_watchers.lua")
 ScriptHost:LoadScript("scripts/init_rando_doors.lua")
@@ -62,5 +63,7 @@ Tracker:AddLocations("locations/dungeons/hyrule castle.json")
 
 
 Tracker:FindObjectForCode("@Tutorial Locations/Obtained/").AvailableChestCount = 0
+
+GraphInit()
 
 occupyRoomSetting()
