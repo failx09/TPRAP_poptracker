@@ -9,6 +9,8 @@ ScriptHost:LoadScript("scripts/server_copy_keys.lua")
 ScriptHost:LoadScript("scripts/control.lua")
 ScriptHost:LoadScript("scripts/graph.lua")
 ScriptHost:LoadScript("scripts/autotracking.lua")
+-- DEBUG: graph overlay (remove when done) - pair with tools/overlay_server.py
+ScriptHost:LoadScript("scripts/overlay.lua")
 ScriptHost:LoadScript("scripts/code_watchers.lua")
 ScriptHost:LoadScript("scripts/init_rando_doors.lua")
 

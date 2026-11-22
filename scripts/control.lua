@@ -12,50 +12,60 @@ end
 
 -- Check if player has any of following items
 function hasAny(items)
-	local level = AccessibilityLevel.None
-	for _, item in ipairs(items) do
-		if type(item) == "table" then
-			level = math.max(level, hasAny(item))
-		elseif type(item) == "string" then
-			if has(item) then
-				level = math.max(level, AccessibilityLevel.Normal)
-			end
-		elseif type(item) == "boolean" then
-			if item then
-				level = math.max(level, AccessibilityLevel.Normal)
-			end
-		else
-			level = math.max(level, item)
-		end
+    local level = AccessibilityLevel.None
+	local reason = nil
+    for _, item in ipairs(items) do
+        local oldLevel = level
+        if type(item) == "table" then
+            level = math.max(level, hasAny(item))
+        elseif type(item) == "string" then
+            if has(item) then
+                level = math.max(level, AccessibilityLevel.Normal)
+            end
+        elseif type(item) == "boolean" then
+            if item then
+                level = math.max(level, AccessibilityLevel.Normal)
+            end
+        else
+            level = math.max(level, item)
+        end
+		if level ~= oldLevel then
+            reason = item
+        end
 	end
 	if level == AccessibilityLevel.SequenceBreak and Tracker:FindObjectForCode("glitcheson") then
 		level = AccessibilityLevel.Normal
 	end
-	return level
+	return level, reason
 end
 
 -- Check if player has all following items
 function hasAll(items)
-	local level = AccessibilityLevel.Normal
-	for _, item in ipairs(items) do
-		if type(item) == "table" then
-			level = math.min(level, hasAll(item))
-		elseif type(item) == "string" then
-			if not has(item) then
-				level = AccessibilityLevel.None
-			end
-		elseif type(item) == "boolean" then
-			if not item then
-				level = AccessibilityLevel.None
-			end
-		else
-			level = math.min(level, item)
-		end
+    local level = AccessibilityLevel.Normal
+	local reason = nil
+    for _, item in ipairs(items) do
+        local oldLevel = level
+        if type(item) == "table" then
+            level = math.min(level, hasAll(item))
+        elseif type(item) == "string" then
+            if not has(item) then
+                level = AccessibilityLevel.None
+            end
+        elseif type(item) == "boolean" then
+            if not item then
+                level = AccessibilityLevel.None
+            end
+        else
+            level = math.min(level, item)
+        end
+		if level ~= oldLevel and type(item) == "string" then
+            reason = item
+        end
 	end
 	if  level == AccessibilityLevel.SequenceBreak and Tracker:FindObjectForCode("glitcheson") then
 		level = AccessibilityLevel.Normal
 	end
-	return level
+	return level, reason
 end
 
 -- Check if player has at least X items
@@ -93,7 +103,7 @@ function _canAccess(targetnode, exclude)
 		end
 		return result
 	end
-	print(CANACCESS_ACTIVE.count.." "..targetnode)
+	--print(CANACCESS_ACTIVE.count.." "..targetnode)
 	local queue = {targetnode}
 	local queueseq = {}
 	local visited = {}
@@ -107,7 +117,10 @@ function _canAccess(targetnode, exclude)
 			visited[current] = true
 			for _, edge in pairs(edges) do
 				local from, flags, to = edge:match("(.*)__(.*)__(.*)")
-				local accessrules = ER_EDGES[edge]
+                local accessrules = ER_EDGES[edge]
+				if accessrules and accessrules[1] and accessrules[1][1] and type(accessrules[1][1]()) == "boolean" then
+                    print(accessrules[1][1](), edge)
+                end
 				if edge == exclude then
 					--skip
 				elseif not accessrules[1] or not accessrules[1][1] or (accessrules[1][1]() > AccessibilityLevel.None) then

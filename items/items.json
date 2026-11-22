@@ -1037,5 +1037,11 @@
 		"type": "toggle",
 		"img": "images/Items/HowlingStone.png",
 		"codes": "smhowlingstone"
+	},
+	{
+		"name": "Graph State",
+		"codes": "graphstate",
+		"img": "images/Items/ForestKey.png",
+		"inherit_codes": false
 	}
 ]

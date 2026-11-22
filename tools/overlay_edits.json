@@ -1,0 +1,379 @@
+{
+ "edges": [],
+ "ghosts": [
+  {
+   "a": "EldinFieldNearCastleTown",
+   "b": "OutsideCastleTownEast",
+   "edge": "EldinFieldNearCastleTown__EXT_A__OutsideCastleTownEast",
+   "id": "gmwijxmgk",
+   "x": 5282.649484729325,
+   "y": 3920.7306356496797
+  },
+  {
+   "a": "CastleTownSouth",
+   "b": "CastleTownTelmasBar",
+   "edge": "CastleTownSouth__INT_A__CastleTownTelmasBar",
+   "id": "gmwijxux7",
+   "x": 4791.077360501454,
+   "y": 4170.304878231374
+  },
+  {
+   "a": "CastleTownAgithasHouse",
+   "b": "CastleTownSouth",
+   "edge": "CastleTownAgithasHouse__INT_B__CastleTownSouth",
+   "id": "gmwijxx5a",
+   "x": 4584.2872737909065,
+   "y": 4168.076536779751
+  },
+  {
+   "a": "CastleTownSeerHouse",
+   "b": "CastleTownSouth",
+   "edge": "CastleTownSeerHouse__INT_B__CastleTownSouth",
+   "id": "gmwijy002",
+   "x": 4640.887146662112,
+   "y": 4162.282849005533
+  },
+  {
+   "a": "CastleTownWest",
+   "b": "CastleTownSouth",
+   "edge": "CastleTownWest__EXT_A__CastleTownSouth",
+   "id": "gmwik11mw",
+   "x": 4546.239436426427,
+   "y": 4156.729598652702
+  },
+  {
+   "a": "CastleTownSTARGame",
+   "b": "CastleTownWest",
+   "edge": "CastleTownSTARGame__INT_B__CastleTownWest",
+   "id": "gmwik14lv",
+   "x": 4545.726917892554,
+   "y": 4045.513076802235
+  },
+  {
+   "a": "LowerKakarikoVillage",
+   "b": "KakarikoVillageBehindGate",
+   "edge": "LowerKakarikoVillage__TO__KakarikoVillageBehindGate",
+   "id": "gmwiklnsk",
+   "x": 7590.1406835279895,
+   "y": 5134.459538098457
+  }
+ ],
+ "positions": {
+  "ArbitersGroundsEastWing": [
+   726.7644368743527,
+   4568.370307286273
+  ],
+  "ArbitersGroundsEntrance": [
+   933.3056134438336,
+   4570.841859405004
+  ],
+  "ArbitersGroundsLobby": [
+   873.3116031670734,
+   4572.096245829018
+  ],
+  "ArbitersGroundsWestWing": [
+   836.2887374870544,
+   4573.3217060608695
+  ],
+  "CastleTownAgithasHouse": [
+   4584.975052966506,
+   4144.051827330825
+  ],
+  "CastleTownCenter": [
+   4705.522697937802,
+   3967.85435227497
+  ],
+  "CastleTownDoctorsOfficeBalcony": [
+   4847.723151967148,
+   3936.8436770652975
+  ],
+  "CastleTownDoctorsOfficeEntrance": [
+   4920.034082380662,
+   3869.461142055584
+  ],
+  "CastleTownDoctorsOfficeLeftDoor": [
+   4892.9740020812715,
+   3926.643002782974
+  ],
+  "CastleTownDoctorsOfficeLower": [
+   4893.584860085624,
+   3836.4477137563367
+  ],
+  "CastleTownDoctorsOfficeRightDoor": [
+   4931.1763286760915,
+   3919.828474598992
+  ],
+  "CastleTownDoctorsOfficeUpper": [
+   4818.8396318776895,
+   3859.5992794810827
+  ],
+  "CastleTownEast": [
+   4972.028380294644,
+   3966.09079175121
+  ],
+  "CastleTownGoronHouse": [
+   4655.399068117392,
+   4124.778138898688
+  ],
+  "CastleTownGoronHouseBalcony": [
+   4609.93187060428,
+   4087.075068953314
+  ],
+  "CastleTownGoronHouseLeftDoor": [
+   4649.537372777664,
+   4089.4923287265938
+  ],
+  "CastleTownGoronHouseRightDoor": [
+   4671.67010518307,
+   4092.2826567240027
+  ],
+  "CastleTownJovanisHouse": [
+   4838.763588973036,
+   4047.9546043350124
+  ],
+  "CastleTownNorth": [
+   4709.376166000104,
+   3744.688083000052
+  ],
+  "CastleTownNorthBehindFirstDoor": [
+   4709.94698156977,
+   3709.8274009535207
+  ],
+  "CastleTownNorthInsideBarrier": [
+   4705.392022941758,
+   3665.583202732525
+  ],
+  "CastleTownSTARGame": [
+   4561.947696819539,
+   4053.733104799728
+  ],
+  "CastleTownSeerHouse": [
+   4641.598059173409,
+   4137.844518007523
+  ],
+  "CastleTownSouth": [
+   4707.697011018419,
+   4170.382301583492
+  ],
+  "CastleTownTelmasBar": [
+   4794.2492471247915,
+   4141.7916124397025
+  ],
+  "CastleTownWest": [
+   4542.022604872468,
+   3956.824679150813
+  ],
+  "DeathMountainElevatorLower": [
+   8127.263558076547,
+   3688.527863644018
+  ],
+  "DeathMountainHotSpring": [
+   8066.472699081397,
+   3735.940561198702
+  ],
+  "DeathMountainNearKakariko": [
+   8117.813670951115,
+   4762.587638816386
+  ],
+  "DeathMountainOutsideSumoHall": [
+   8203.829527800972,
+   3672.8175492085084
+  ],
+  "DeathMountainSumoHall": [
+   8154.579116509108,
+   3631.4174986460953
+  ],
+  "DeathMountainSumoHallElevator": [
+   8104.5245044225285,
+   3651.5247418707186
+  ],
+  "DeathMountainSumoHallGoronMinesTunnel": [
+   8155.634239222865,
+   3680.9783372491897
+  ],
+  "DeathMountainTrail": [
+   8182.509100306201,
+   4232.747485914291
+  ],
+  "DeathMountainVolcano": [
+   8254.99983897281,
+   3844.2581461090926
+  ],
+  "EldinFieldBomskitGrotto": [
+   6371,
+   3741
+  ],
+  "EldinFieldGrottoPlatform": [
+   7033.91045679694,
+   1533.0647430477422
+  ],
+  "EldinFieldNearCastleTown": [
+   5433.417953860408,
+   3941.86687562796
+  ],
+  "EldinFieldOutsideHiddenVillage": [
+   6708.311494088281,
+   1803.0720107103741
+  ],
+  "FishingHole": [
+   5886.587014009837,
+   469.31525263498634
+  ],
+  "FishingHoleHouse": [
+   5816.791940818405,
+   611.9791751881004
+  ],
+  "FishingHolePieceofHeart": [
+   5814.042877381356,
+   341.53467653026587
+  ],
+  "GoronMinesBossRoom": [
+   8188.307097457281,
+   4990.967096701006
+  ],
+  "GoronMinesCrystalSwitchRoom": [
+   8237.062795097156,
+   5024.564300847573
+  ],
+  "GoronMinesEntrance": [
+   7979.196320360408,
+   5150.772985103802
+  ],
+  "GoronMinesLowerWestWing": [
+   7917.243365428351,
+   5063.713871443464
+  ],
+  "GoronMinesMagnetRoom": [
+   7977.942149667511,
+   5062.073762863488
+  ],
+  "GoronMinesNorthWing": [
+   8237.967096701004,
+   4941.391828087101
+  ],
+  "GoronMinesUpperEastWing": [
+   8300.77763317254,
+   4942.684946277219
+  ],
+  "HiddenVillage": [
+   6586.2963143820225,
+   2085.0872524396154
+  ],
+  "HiddenVillageImpazHouse": [
+   6556.704117106368,
+   2208.1505864639053
+  ],
+  "KakarikoGraveyard": [
+   8099.445751607046,
+   5479.679506523516
+  ],
+  "KakarikoVillageBehindGate": [
+   7333.124375099873,
+   5064.65921769566
+  ],
+  "LowerKakarikoVillage": [
+   7611.420476447402,
+   5525.8878386763645
+  ],
+  "MirrorChamberLower": [
+   686.84504564645,
+   3631.462804975486
+  ],
+  "MistAreaFaronMistCave": [
+   4807.303440108044,
+   7022.045868880516
+  ],
+  "MistAreaInsideMist": [
+   4484.722728631741,
+   7131.056747993463
+  ],
+  "MistAreaNearNorthFaronWoods": [
+   4398.576300962412,
+   7296.391061698746
+  ],
+  "MistAreaNearNorthFaronWoodsBehindGate": [
+   4350.991178972217,
+   7342.605116474486
+  ],
+  "MistAreaOutsideFaronMistCave": [
+   4618.7662450835305,
+   7021.224933888688
+  ],
+  "NorthEldinField": [
+   6821.558455494773,
+   1677.1464757694475
+  ],
+  "NorthFaronLostWoodsEntrance": [
+   4101.1199645859815,
+   6919.274918939532
+  ],
+  "NorthFaronWoods": [
+   4230.884151584347,
+   7376.9697150898855
+  ],
+  "OutsideArbitersGrounds": [
+   603.4410467495914,
+   3869.4301676366445
+  ],
+  "OutsideCastleTownEast": [
+   5168.140224548261,
+   3961.240838774392
+  ],
+  "OutsideCastleTownSouth": [
+   4706.847138290741,
+   4291.26005516265
+  ],
+  "OutsideCastleTownWest": [
+   4301.030857836833,
+   3962.370294041992
+  ],
+  "OutsideCastleTownWestGrottoLedge": [
+   3822.292330619065,
+   3719.810124017989
+  ],
+  "OutsideCastleTownWestHelmasaurGrotto": [
+   3792.198591002291,
+   3744.6174651753527
+  ],
+  "SnowpeakClimbLower": [
+   4184.136557736767,
+   603.1941835098748
+  ],
+  "SnowpeakClimbUpper": [
+   3559.41697074399,
+   340.2346218437789
+  ],
+  "SouthCastleTownDoors": [
+   4706.6892395929835,
+   4222.1822624067045
+  ],
+  "UpperKakarikoVillage": [
+   7663.412525581079,
+   5495.406645669148
+  ],
+  "UpperZorasRiverIzasHouse": [
+   6054.163775381333,
+   880.4780946023244
+  ],
+  "ZorasDomain": [
+   4856.379061977257,
+   733.0869186267789
+  ],
+  "ZorasDomainSnowpeakEntrance": [
+   4677.510719345339,
+   609.7950731914322
+  ],
+  "ZorasDomainThroneRoom": [
+   4858.708704549941,
+   244.70114906719522
+  ],
+  "ZorasDomainTopofWaterfall": [
+   4853.677805761047,
+   346.81399338786207
+  ],
+  "ZorasDomainWestLedge": [
+   4740.042877381356,
+   783.25155044173
+  ]
+ }
+}
